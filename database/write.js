@@ -5,7 +5,7 @@ import { db } from "./config";
  * Saves new task to Firebase.
  * 
  * @param {object} data 
- * The description and status of a task.
+ * The description and status (as false) of a task.
  * @returns 
  * Promise 
  */
