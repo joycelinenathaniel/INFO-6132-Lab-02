@@ -23,7 +23,7 @@ export default function TaskItem({
 
     if (!updated) {
       onStatusChange(!completed, id);
-      Alert.alert('Error', 'There was an error trying to update the post!');
+      Alert.alert('Error', 'There was an error trying to update the task!');
     }
   };
 
@@ -43,7 +43,7 @@ export default function TaskItem({
           onPress: async () => {
             const deleted = await database.remove(id);
             if (!deleted) {
-              Alert.alert('Error', 'There was an error trying to delete the post. Please try again later.');
+              Alert.alert('Error', 'There was an error trying to delete the task. Please try again later.');
             } else {
               onTaskDelete(id);
             }
